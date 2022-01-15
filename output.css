@@ -1,0 +1,202 @@
+html {
+  font-size: 16px;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.accent {
+  accent-color: #b8860b;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #b8860b;
+  color: #ffffff;
+  font-size: x-large;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.container {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.title {
+  padding: 40px 30px 30px;
+}
+
+.form-wrap {
+  height: 600px;
+  border-radius: 20px;
+  width: 100%;
+  border: 1px solid #b8860b;
+  margin-top: 30px;
+  box-sizing: border-box;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 75%;
+}
+
+.output {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 15px;
+}
+
+.outputname {
+  border-bottom: 2px solid #000000;
+  max-width: 90%;
+  height: 3.5rem;
+  font-size: 3rem;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.form-title {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  font-size: 2rem;
+}
+
+form {
+  height: 450px;
+}
+
+.form-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+}
+
+.submit-div {
+  height: 25%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submit-button {
+  min-width: 70%;
+  border-radius: 5px;
+  background: #b8860b;
+  color: #ffffff;
+  font-size: xx-large;
+}
+.submit-button:hover, .submit-button:focus {
+  background: #7e5d09;
+}
+
+.input-value {
+  display: flex;
+  flex-direction: column;
+}
+
+.DOB:hover, .DOB:focus {
+  outline: #b8860b;
+}
+
+.radio-buttons {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 760px) {
+  .form-wrap {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    height: unset;
+  }
+
+  .header {
+    min-height: 20%;
+  }
+
+  .header h3 {
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+
+  .container {
+    margin-top: 30px;
+  }
+
+  .output {
+    font-size: 3rem;
+  }
+
+  .form {
+    height: 350px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .outputname {
+    max-width: 50%;
+    height: 5rem;
+  }
+
+  .form-title {
+    font-size: 2.6rem;
+  }
+
+  .form-input {
+    align-items: unset;
+    font-size: 2.35rem;
+  }
+
+  .form-wrapper {
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+  }
+
+  .input-value {
+    display: block;
+  }
+
+  .submit-div {
+    align-items: unset;
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+  }
+
+  .submit-button {
+    height: 50%;
+  }
+}
+@media screen and (min-width: 1360px) {
+  .outputname {
+    max-width: 30%;
+  }
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,203 @@
+$primary: #b8860b;
+$white: #ffffff;
+$grey: #808080;
+$primary-dark: #7e5d09;
+
+@mixin center-width-70 {
+    padding-left: 15%;
+    padding-right: 15%;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-size: 16px;
+    height: 100vh;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.accent{
+    accent-color: $primary;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+    color: $white;
+    font-size: x-large;
+}
+
+.header h2{
+    text-align: center;
+}
+
+.header h3{    
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.container{
+    margin-right: 5px;
+    margin-left: 5px;
+    // margin-bottom: 30px;
+}
+
+.title{
+    padding: 40px 30px 30px;
+}
+
+.form-wrap{
+    height: 600px;
+    border-radius: 20px;
+    width: 100%;
+    border: 1px solid $primary;
+    margin-top: 30px;
+    box-sizing: border-box;
+}
+
+.form-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 75%;
+}
+
+.output{
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 15px;
+}
+
+.outputname{
+    border-bottom: 2px solid #000000;
+    max-width: 90%;
+    height: 3.5rem;
+    font-size: 3rem;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.form-title{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    font-size: 2rem;
+}
+
+form{
+    height: 450px
+}
+
+.form-input{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+}
+
+.submit-div{
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button{
+    min-width: 70%;
+    border-radius: 5px;
+    background: $primary;
+    color: $white;
+    font-size: xx-large;
+    &:hover, &:focus{
+        background: $primary-dark;
+    }
+}
+
+.input-value{
+    display: flex;
+    flex-direction: column;
+}
+.DOB:hover, .DOB:focus{
+    outline: $primary;
+}
+
+.radio-buttons{
+    display: flex;
+    align-items: center;
+}
+
+ @media screen and (min-width: 760px) {
+
+    .form-wrap{
+        width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        height: unset;
+    }
+    .header{
+        min-height: 20%;
+    }
+    .header h3{    
+        margin-top: unset;
+        margin-bottom: unset;
+    }
+    .container{
+        margin-top: 30px;
+    }
+    .output{
+        font-size: 3rem;
+    }
+    .form{
+        height: 350px;
+    }
+   
+}
+
+@media screen and (min-width: 1000px) {
+    .outputname{
+        max-width: 50%;
+        height: 5rem;
+    }
+    .form-title{
+        font-size: 2.6rem;
+    }
+    .form-input{
+        align-items: unset;
+        font-size: 2.35rem;
+    }
+    .form-wrapper{
+        @include center-width-70()
+    }
+    .input-value{
+        display: block;
+    }
+    .submit-div{
+        align-items: unset;
+        @include center-width-70()
+    }
+    .submit-button{
+        height: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1360px) {
+    .outputname{
+        max-width: 30%;
+    }
+}
+
